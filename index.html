@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Université de Boumerdes - Université de M'hamed Bougara Boumerdes</title>
+</head>
+<body>
+    <section>
+        <video autoplay muted loop id="video">
+            <source src="./images/video6.mp4" type="video/mp4">
+        </video>
+        <div class="hello">
+            <h1>Bienvenue à</h1>
+            <h3>L'Université M'hamed Bougara </h3>
+            <h3>de Boumerdes</h3>
+                <div class="subscribe">
+                    <input type="email" required placeholder="Address Email">
+                    <input type="submit" value="S'inscrire">
+                </div>
+        </div>
+        <nav>
+            <div class="nav">
+                <div class="logo">UMBB</div>
+                <!-- first nav bar -->
+                <div class="navItem">
+                    <ul>
+                        <li><a href="#">Messagerie</a></li>
+                        <li><a href="#">Site web Enseignants</a></li>
+                        <li><a href="#">Revue de Press</a></li>
+                        <li><a href="#">Annuaire</a></li>
+                        <li><a href="#">UMBB Info</a></li>
+                    </ul>
+            </div>
+            </div>
+        </nav>
+        <nav class="navPhone" id="displayNav">
+            <span id="close" class="closeNav">&times;</span>
+            <div class="navs">
+                <div class="LOGOphone">UMBB</div>
+                <ul>
+                    <li><a href="#">Messagerie</a></li>
+                        <li><a href="#">Site web Enseignants</a></li>
+                        <li><a href="#">Revue de Press</a></li>
+                        <li><a href="#">Annuaire</a></li>
+                        <li><a href="#">UMBB Info</a></li>
+                </ul>
+            </div>
+        </nav>
+        <span id="open" class="menuicon">&#9776</span>
+    </section>
+
+    <script>
+        let close_open =document.getElementById("open");
+        close_open.onclick = () =>{
+            if (document.getElementById("displayNav").style.display = "none") {
+                document.getElementById("displayNav").style.display = "block";
+                close_open.style.display = "none";
+                close.style.display = "block";
+            }
+        }
+        let close = document.getElementById("close");
+        close.onclick = () => {
+            if (document.getElementById("displayNav").style.display = "block") {
+                document.getElementById("displayNav").style.display = "none";
+                close.style.display = "none";
+                close_open.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

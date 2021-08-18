@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;    background: #f7f7f7f7;
+}
+
+/* video background and the hello phrase with the subscription button and a nav bar */
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+/* the background video css code */
+
+section #video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    top: 0;
+}
+
+/* the hello phrase css code */
+
+section .hello{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* the subsciption input and btn box css code */
+
+section .subscribe{
+    width: 420px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+section .subscribe input[type='email'] , section .subscribe input[type='submit']{
+    height: 35px;
+    border: none;
+    outline: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+section .subscribe input[type='email']{
+    width: 300px;
+    padding: 0 8px;
+    border-radius: 5px 0 0 5px;
+}
+section .subscribe input[type='submit']{
+    width: 100px;
+    border-radius: 0 5px 5px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+section .subscribe input[type='submit']:hover{
+    background: rgba(2, 3, 4, 0.5);
+    color: #f1f1f1;
+}
+
+/* nav bar css code 'the startup navs' */
+
+section nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(2, 3, 4, 0.5);
+    display: block;
+}
+nav .nav{
+    display: flex;
+}
+nav .logo{
+    flex: 1;
+    font-size: 35px;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f1f1f1;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+nav .navItem{
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+nav .navItem ul li{
+    display: inline-block;
+    margin: 0 25px;
+    font-size: 18px;
+    padding: 15px 0;
+}
+nav .navItem ul li a{
+    text-decoration: none;
+    color: #f1f1f1;
+}
+nav .navItem ul li:hover{
+    border-bottom: 3px solid #f1f1f1;
+}
+
+/* phone navbar css code */
+
+section .navPhone{
+    width: 250px;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    display: none;
+
+}
+section .navPhone .navs{
+    display: flex;
+    align-items:flex-start ;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-left: 30px;
+}
+section .navPhone .navs ul li{
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 5px 0;
+}
+section .navPhone .navs ul li a{
+    text-decoration: none;
+    color: #f1f1f1;
+}
+section .navPhone .navs ul li:hover{
+    border-bottom: 2px solid #f1f1f1;
+}
+section .navPhone .navs .LOGOphone{
+    font-size: 25px;
+    color: #f1f1f1;
+    font-weight: bold;
+    padding: 19px 0;
+    cursor: pointer;
+}
+section .menuicon{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #f1f1f1;
+    cursor: pointer;
+    font-size: 25px;
+    display: none;
+}
+section .closeNav{
+    color: #f1f1f1;
+    font-size: 35px;
+    margin: 28px;
+    cursor: pointer;
+}
+
+/* we finish the css code for the welcome section  */
+
+/*Css Code for the main section*/
+
+/*Responsive Design Css Code*/
+
+@media only screen and (max-width:1000px){
+    section .hello{
+        font-size: 30px;
+    }
+    nav .navItem ul li{
+        margin: 0 8px;
+    }
+    nav .logo{
+        font-size: 28px;
+    }
+}
+@media only screen and (max-width:799px){
+    section{
+        height: 70vh;
+    }
+    section .hello{
+        height: 70vh;
+        font-size: 27px;
+    }
+    section nav{
+        display: none;
+    }
+    section .navPhone{
+        height: 70vh;
+    }
+    section .menuicon{
+        display: block;
+    }
+}
+@media only screen and (max-width:600px){
+    section .hello{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width:500px){
+    section{
+        height: 50vh;
+    }
+    section .hello{
+        height: 50vh;
+        font-size: 20px;
+    }
+    section .navPhone{
+        height: 50vh;
+    }
+    section .subscribe{
+        width: 320px;
+    }
+    section .subscribe input[type='email']{
+        width: 230px;
+    }
+    section .subscribe input[type='submit']{
+        width: 70px;
+    }
+}
+@media only screen and (max-width:350px){
+    section .subscribe{
+        width: 300px;
+    }
+    section .subscribe input[type='email']{
+        width: 210px;
+    }
+    section .subscribe input[type='submit']{
+        width: 70px;
+    }
+}
