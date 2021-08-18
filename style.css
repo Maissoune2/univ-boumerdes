@@ -167,7 +167,8 @@ section .menuicon{
 section .closeNav{
     color: #f1f1f1;
     font-size: 35px;
-    margin: 28px;
+    margin-top: 28px;
+margin-left:28px;
     cursor: pointer;
 }
 
@@ -213,14 +214,14 @@ section .closeNav{
 }
 @media only screen and (max-width:500px){
     section{
-        height: 50vh;
+        height: 60vh;
     }
     section .hello{
-        height: 50vh;
+        height: 60vh;
         font-size: 20px;
     }
     section .navPhone{
-        height: 50vh;
+        height: 60vh;
     }
     section .subscribe{
         width: 320px;
