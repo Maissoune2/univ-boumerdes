@@ -52,23 +52,27 @@ section .subscribe{
     justify-content: space-between;
     flex-direction: row;
 }
+/*-----------------------------------------------------------------------------------------*/
 section .subscribe input[type='email'] , section .subscribe input[type='submit']{
     height: 35px;
     border: none;
     outline: none;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+/*-----------------------------------------------------------------------------------------*/
 section .subscribe input[type='email']{
     width: 300px;
     padding: 0 8px;
     border-radius: 5px 0 0 5px;
 }
+/*-----------------------------------------------------------------------------------------*/
 section .subscribe input[type='submit']{
     width: 100px;
     border-radius: 0 5px 5px 0;
     font-weight: bold;
     cursor: pointer;
 }
+/*-----------------------------------------------------------------------------------------*/
 section .subscribe input[type='submit']:hover{
     background: rgba(2, 3, 4, 0.5);
     color: #f1f1f1;
@@ -83,9 +87,11 @@ section nav{
     background: rgba(2, 3, 4, 0.5);
     display: block;
 }
+/*-----------------------------------------------------------------------------------------*/
 nav .nav{
     display: flex;
 }
+/*-----------------------------------------------------------------------------------------*/
 nav .logo{
     flex: 1;
     font-size: 35px;
@@ -97,22 +103,26 @@ nav .logo{
     letter-spacing: 2px;
     cursor: pointer;
 }
+/*-----------------------------------------------------------------------------------------*/
 nav .navItem{
     flex: 5;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
+/*-----------------------------------------------------------------------------------------*/
 nav .navItem ul li{
     display: inline-block;
     margin: 0 25px;
     font-size: 18px;
     padding: 15px 0;
 }
+/*-----------------------------------------------------------------------------------------*/
 nav .navItem ul li a{
     text-decoration: none;
     color: #f1f1f1;
 }
+/*-----------------------------------------------------------------------------------------*/
 nav .navItem ul li:hover{
     border-bottom: 3px solid #f1f1f1;
 }
@@ -127,8 +137,8 @@ section .navPhone{
     top: 0;
     margin: 0;
     display: none;
-
 }
+/*-----------------------------------------------------------------------------------------*/
 section .navPhone .navs{
     display: flex;
     align-items:flex-start ;
@@ -136,18 +146,22 @@ section .navPhone .navs{
     flex-direction: column;
     padding-left: 30px;
 }
+/*-----------------------------------------------------------------------------------------*/
 section .navPhone .navs ul li{
     list-style-type: none;
     padding: 10px 0;
     margin: 5px 0;
 }
+/*-----------------------------------------------------------------------------------------*/
 section .navPhone .navs ul li a{
     text-decoration: none;
     color: #f1f1f1;
 }
+/*-----------------------------------------------------------------------------------------*/
 section .navPhone .navs ul li:hover{
     border-bottom: 2px solid #f1f1f1;
 }
+/*-----------------------------------------------------------------------------------------*/
 section .navPhone .navs .LOGOphone{
     font-size: 25px;
     color: #f1f1f1;
@@ -155,6 +169,7 @@ section .navPhone .navs .LOGOphone{
     padding: 19px 0;
     cursor: pointer;
 }
+/*-----------------------------------------------------------------------------------------*/
 section .menuicon{
     position: absolute;
     top: 20px;
@@ -164,20 +179,543 @@ section .menuicon{
     font-size: 25px;
     display: none;
 }
+/*-----------------------------------------------------------------------------------------*/
 section .closeNav{
     color: #f1f1f1;
     font-size: 35px;
     margin-top: 28px;
-margin-left:28px;
+    margin-left: 28px;
     cursor: pointer;
 }
-
+/*-----------------------------------------------------------------------------------------*/
 /* we finish the css code for the welcome section  */
+
+/*-----------------------------------------------------------------------------------------*/
 
 /*Css Code for the main section*/
 
-/*Responsive Design Css Code*/
+main{
+    width: 100%;
+    height: auto;
+}
 
+/*Nav Bar css code*/
+
+main .menunav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f1f1;
+    flex-direction: column;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.2);
+    position: relative;
+}
+/*-----------------------------------------------------------------------------------------*/
+main .menunav .navItem ul li {
+    display: inline-block;
+    margin: 0 20px;
+    padding: 30px 0;
+}
+/*-----------------------------------------------------------------------------------------*/
+main .menunav .navItem ul li a{
+    color: hsl(180, 25%, 20%);
+    text-decoration:none ;
+}
+/*-----------------------------------------------------------------------------------------*/
+/* the drop menu css co<de */
+.menunav .navItem ul li .dropmenu , .menunav .navItem ul li .dropmenu2 , .menunav .navItem ul li .dropmenu3 ,  .menunav .navItem ul li .dropmenu4 ,  .menunav .navItem ul li .dropmenu5{
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    text-align: start;
+    margin-top: 30px ;
+    background: #f1f1f1;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+/*-----------------------------------------------------------------------------------------*/
+.menunav .navItem ul li .dropmenu a , .menunav .navItem ul li .dropmenu2 a , .menunav .navItem ul li .dropmenu3 a ,.menunav .navItem ul li .dropmenu4 a  , .menunav .navItem ul li .dropmenu5 a {
+    display: block;
+    font-size: 15px;
+    font-weight: lighter;
+    padding: 5px 10px;
+    color: hsl(180, 25%, 20%);
+}
+/*-----------------------------------------------------------------------------------------*/
+.menunav .navItem ul #dropdown1:hover .dropmenu , .menunav .navItem ul #dropdown2:hover .dropmenu2 , .menunav .navItem ul #dropdown3:hover .dropmenu3 , .menunav .navItem ul #dropdown4:hover .dropmenu4 ,.menunav .navItem ul #dropdown5:hover .dropmenu5{
+    display: block;
+}
+/*-----------------------------------------------------------------------------------------*/
+.menunav .navItem ul li .dropmenu a:hover ,.menunav .navItem ul li .dropmenu2 a:hover ,.menunav .navItem ul li .dropmenu2 a:hover,.menunav .navItem ul li .dropmenu3 a:hover,.menunav .navItem ul li .dropmenu4 a:hover,.menunav .navItem ul li .dropmenu5 a:hover{
+    color: #f1f1f1;
+    border-bottom: none;
+    padding: 5px 10px;
+    background: rgba(0,0,0,0.5);
+}
+
+
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+#openMenuNav{
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 20px 10px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    border-bottom: 1px solid #ccc;
+}
+#closeMenuNav{
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 20px 0;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left:10%;
+    display: none;
+}
+
+
+
+
+/*-----------------------------------------------------------------------------------------*/
+/* css code for the new sl<ider */
+
+
+.content{
+    height: 400px;
+    width: 780px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid hsl(180, 25%, 40%);
+    margin: 20px auto;
+    margin-top: 80px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.3);
+}
+/*-----------------------------------------------------------------------------------------*/
+.content .images{
+    height: 100%;
+    width: 100%;
+}
+
+.content .images img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.content .btm_sliders{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%);
+}
+
+.content .btm_sliders span{
+    width: 25px;
+    height: 25px;
+    border: 2px solid #000;
+    border-top: none;
+    border-radius: 50%;
+    margin: 0 3px;
+    cursor: pointer;
+
+}
+
+.content .slide{
+    width: 30px;
+    height: 30px;
+    border:2px solid #000;
+    border-left: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: rgba(255, 255, 255,0.1);
+    border-radius:50% ;
+}
+
+.content .slide:hover{
+    background-color: #000;
+}
+
+.content .right{
+    right: 0;
+    border:2px solid #000;
+    border-right: none;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+main .alert{
+    width: 70%;
+    height: auto;
+    padding: 20px;
+    margin: 20px auto;
+    margin-top: 80px;
+    text-align: center;
+    border: 1px solid hsl(180, 21%, 40%);
+    color: hsl(180, 25%, 20%);
+    background: #f1f1f1;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.3);
+
+}
+/*-----------------------------------------------------------------------------------------*/
+main .alert span{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    color: hsl(180, 25%, 20%);
+    padding-right: 10px;
+}
+main .alert a{
+    color: hsl(180, 25%, 30%);
+}
+
+
+/*********************************************************************************************************/
+
+
+/* css code for the presentation section */
+main .parent3{
+    width: 100%;
+    height: auto;
+    margin: 100px auto;
+    background-color: #f1f1f1;
+    padding: 30px 0;
+}
+main .parent3 div{
+    width: 90%;
+    height: 50vh;
+    margin: 10vh auto;
+    display: flex;
+    flex-direction:row ;
+
+}
+main .parent3 div article:first-child{
+    width: 40%;
+    height: 100%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.3);
+}
+main .parent3 div article:first-child:hover{
+    transform: scale(0.9);
+}
+main .parent3 div article:last-child{
+    width: 56%;
+    height: 96%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 2%;
+}
+main .parent3 div article:last-child h1{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid hsl(180, 25%, 20%);
+    color: hsl(180, 25%, 20%);
+    font-weight: bolder;
+}
+main .parent3 div article:last-child p{
+    padding-top: 10px;
+    text-align: start;
+    font-weight: bold;
+    font-style: italic;
+}
+main .parent3 div article:last-child ul{
+    padding-top: 10px;
+    list-style-type: none;
+}
+main .parent3 div article:last-child ul li {
+    padding-bottom: 2px;
+    font-weight: bold;
+}
+main .parent3 div article:last-child ul li:last-child{
+    padding-bottom: 0px;
+}
+main .parent3 div article:last-child ul li a{
+    text-decoration: none;
+    color: hsl(160, 25%, 30%);
+}
+main .parent3 div article:last-child ul li a:hover{
+    text-decoration: underline;
+}
+main .parent3 div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block !important;
+    cursor: pointer;
+}
+main .parent3 #order2{
+    order: 2;
+}
+main .parent3 #order3{
+    order: 2;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+
+/* css code for the news section 'actualités<'  and events section*/
+
+
+main .parent1 {
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main .parent1 div:first-child {
+    width: 96%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+main .parent1 div:first-child h1 {
+    color: hsl(180, 25%, 20%);
+    border-bottom: 1px solid hsl(180, 25%, 20%);
+}
+main .parent1 div:first-child span {
+    margin-right: 5%;
+}
+main .parent1 div:first-child span a {
+    color: hsl(180, 25%, 30%);
+}
+main .parent1 div:last-child {
+    width: 98%;
+    height: auto;
+    padding: 0 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+main .parent1 div:last-child article{
+    width: 290px;
+    /* height: 290px; */
+    height: 390px;
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.3);
+}
+main .parent1 div:last-child article p{
+    width: 100%;
+    /* height: 90px; */
+    height: 190px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 2px;
+}
+main .parent1 img{
+    width: 290px;
+    height: 200px;
+    object-position: center;
+    object-fit: cover;
+    display: block !important;
+    border: none;
+}
+main .parent1 div:last-child article:hover{
+    transform: scale(0.9);
+}
+main .parent1 div:last-child article section{
+    width: 100%;
+    height: 190px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main .parent1 div:last-child article section strong{
+    padding-bottom: 10px;
+}
+main .parent1 div:last-child article section small{
+    padding: 0 2px;
+    padding-bottom: 10px;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+/* css code for the research gate and it's friend section */
+
+main .parent4{
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+    padding-top: 100px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+main .parent4 div{
+    width: 380px;
+    height: 80vh;
+    margin: 0 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid #ccc;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.3);
+
+}
+main .parent4 div h3{
+    padding-bottom: 10px;
+    border-bottom: 2px solid hsl(180, 25%, 30%);
+    color: hsl(180, 25%, 30%);
+    margin-bottom: 10px;
+}
+main .parent4 div ul{
+    list-style-type: none;
+    padding-top: 10px;
+}
+main .parent4 div ul li{
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+main .parent4 div ul li:last-child{
+    border-bottom: none;
+}
+main .parent4 div ul li a{
+    text-decoration: none;
+    color: #000;
+}
+main .parent4 div ul li a:hover{
+    color: hsl(300, 25%, 50%);
+    text-decoration: underline;
+}
+
+
+/* css code for the last images section */
+
+
+main .parent5{
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    margin-bottom: 100px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+main .parent5 div{
+    width: 250px;
+    height: 250px;
+    border: 1px solid #ccc;
+    margin: 15px;
+}
+main .parent5 div img{
+    display: block !important;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+main .parent5 div:hover{
+    transform: scale(0.99);
+}
+
+
+/* css code for the footer section */
+
+
+footer{
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    border-top: 1px solid #ccc;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+footer .uls{
+    width: 95%;
+    margin: 0 2.5%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+footer div{
+    width: 500px;
+    height: auto;
+    margin-bottom: 25px;
+}
+footer div h3{
+    padding-bottom: 10px;
+    color: hsl(180, 25%, 20%);
+}
+footer div ul{
+    list-style-type: none;
+}
+footer div ul li{
+    padding: 5px;
+}
+footer div ul li a{
+    text-decoration: none;
+    color: hsl(180, 25%, 40%);
+}
+footer .contact{
+    width: 100%;
+    height: 100px;
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .contact span{
+    margin: 0 10px;
+    width: 60px;
+    height: 60px;
+    background-color: hsl(180, 25%, 20%);
+    border-radius: 50%;
+    cursor: pointer;
+}
+footer .contact span:hover{
+    transform: scale(1.19);
+}
+footer .made{
+    width: 96%;
+    height: auto;
+    padding: 15px 2%;
+    text-align: center;
+    opacity: 0.5;
+}
+
+/*Responsive Design Css Code*/
 @media only screen and (max-width:1000px){
     section .hello{
         font-size: 30px;
@@ -206,6 +744,9 @@ margin-left:28px;
     section .menuicon{
         display: block;
     }
+    .content{
+        width: 95%;
+    }
 }
 @media only screen and (max-width:600px){
     section .hello{
@@ -213,15 +754,8 @@ margin-left:28px;
     }
 }
 @media only screen and (max-width:500px){
-    section{
-        height: 70vh;
-    }
     section .hello{
-        height: 70vh;
         font-size: 20px;
-    }
-    section .navPhone{
-        height: 70vh;
     }
     section .subscribe{
         width: 320px;
@@ -232,7 +766,105 @@ margin-left:28px;
     section .subscribe input[type='submit']{
         width: 70px;
     }
+    main .parent5 div{
+        width: 300px;
+        height: 300px;
+    }
+
 }
+
+@media only screen and (max-width:980px){
+    main .parent1 div:last-child {
+        align-items: center;
+        justify-content: space-around;
+
+    }
+}
+
+@media only screen and (max-width:700px){
+    main .parent1 div:last-child article{
+        width: 400px;
+    }
+    main .parent1 div:last-child article p{
+        text-align: center !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    main .parent1 img{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width:830px){
+    /*change the presentation style*/
+    main .parent3 div{
+        width: 90%;
+        height: auto;
+        margin: 10vh auto;
+        display: flex;
+        flex-direction:column ;
+    
+    }
+    main .parent3 div article:first-child{
+        width: 100%;
+        height: 50vh;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.3);
+    }
+    main .parent3 div article:last-child{
+        width: 96%;
+        height: 50vh;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding:2%;
+    }
+    #whatorder1{
+        order: 1;
+    }
+    #whatorder2{
+        order: 2;
+    }
+}
+@media only screen and  (max-width:735px){
+    main .menunav{
+        width: 96%;
+        height: 400px;
+        display: none;
+        padding: 2%;
+        margin-top: 10px;
+    }
+    main .menunav .navItem{
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 30%;
+        transform: translateY(-50%);
+
+    }
+    main .menunav .navItem ul li {
+        width: 200px;
+        display: block;
+        margin: 0;
+        padding: 10px 0;
+    }
+    .menunav .navItem ul li .dropmenu , .menunav .navItem ul li .dropmenu2 , .menunav .navItem ul li .dropmenu3 ,  .menunav .navItem ul li .dropmenu4 ,  .menunav .navItem ul li .dropmenu5{
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    #openMenuNav{
+        display: block;
+    }
+}
+
+
+/* 
+for the devices with a screen.width > 500px ,
+the content of the website is responsive 
+and it's look nicely , so now ,,,,
+I will create a new design that it will be responsive with the smart phones  */
+
 @media only screen and (max-width:350px){
     section .subscribe{
         width: 300px;
@@ -242,5 +874,58 @@ margin-left:28px;
     }
     section .subscribe input[type='submit']{
         width: 70px;
+    }
+}
+
+@media only screen and (max-width:482px){
+    /* this the css code for the small screens */
+    /* I have to note that the smallest screen is 240px  */
+    /* the dominant sreen widths range btw 300 and 400 px */
+    section{
+        height: 55vh;
+    }
+    section .hello{
+        height: 55vh;
+        font-size: 15px;
+    }
+    section .subscribe{
+        width: 315px;
+    }
+    section .subscribe input[type='email']{
+        width: 200px;
+    }
+    section .subscribe input[type='submit']{
+        width: 92px;
+    }
+    section .navPhone{
+        height: 55vh;
+    }
+    .content{
+        height: 390px;
+        width: 390px;
+        margin-top: 50px;
+    }
+    main .parent3 div article:first-child{
+        width: 80%;
+        margin: auto;
+        height: 30vh;
+    }
+    main .parent3 div article:last-child{
+        width: 80%;
+        height: auto;
+        font-size: 10px;
+    }
+    main .parent1 div:last-child article{
+        width: 300px;
+    }
+    main .parent1 img{
+        width: 300px;
+    }
+    main .parent1 div:first-child h1 {
+        font-size: 20px;
+    }
+    main .parent5 div{
+        width: 280px;
+        height: 280px;
     }
 }

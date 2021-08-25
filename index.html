@@ -10,7 +10,7 @@
 <body>
     <section>
         <video autoplay muted loop id="video">
-            <source src="./images/video4.mp4" type="video/mp4">
+            <source src="./images/video12.mp4" type="video/mp4">
         </video>
         <div class="hello">
             <h1>Bienvenue à</h1>
@@ -49,26 +49,416 @@
                 </ul>
             </div>
         </nav>
-        <span id="open" class="menuicon">&#9776</span>
+        <span id="open" class="menuicon">&#9776;</span>
     </section>
 
-    <script>
-        let close_open =document.getElementById("open");
-        close_open.onclick = () =>{
-            if (document.getElementById("displayNav").style.display = "none") {
-                document.getElementById("displayNav").style.display = "block";
-                close_open.style.display = "none";
-                close.style.display = "block";
-            }
-        }
-        let close = document.getElementById("close");
-        close.onclick = () => {
-            if (document.getElementById("displayNav").style.display = "block") {
-                document.getElementById("displayNav").style.display = "none";
-                close.style.display = "none";
-                close_open.style.display = "block";
-            }
-        }
-    </script>
+    <main>
+        <span id="openMenuNav">&#9776;</span>
+        <div class="menunav" id="NavBar">
+            <span id="closeMenuNav">&times;</span>
+            <div class="navItem" >
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li id="dropdown1"><a href="#">Université</a>
+                    
+                        <div class="dropmenu">
+                            <a href="#">Histoire de l'UMBB</a>
+                            <a href="#">Présentation</a>
+                            <a href="#">Politique de l'établissement</a>
+                            <a href="#">Organisation Administrative du rectorat</a>
+                            <a href="#">Services Communs</a>
+                            <a href="#">Cellule de Communication</a>
+                            <a href="#">Bibliothèque Universitaire</a>
+                            <a href="#">Facultés et Institut</a>
+                            <a href="#">Conférence Régionale des Universités du Centre</a>
+                            <a href="#">L'université en Chiffres</a>
+                            <a href="#">Investissements</a>
+                            <a href="#">Travailler à l’UMBB</a>
+                            <a href="#">Liens Utiles</a>
+                            <a href="#">Annuaire</a>
+                            <a href="#">Documents Disponible</a>
+                            <a href="#">Actualités et Evenements</a>
+                        </div>
+                    
+                    </li>
+                    <li id="dropdown2"><a href="#">Formation</a>
+                    <div class="dropmenu2">
+                        <a href="#">LMD à l’UMBB</a>
+                        <a href="#">Inscription</a>
+                        <a href="#">iteTutorat</a>
+                        <a href="#">Licence</a>
+                        <a href="#">Master</a>
+                        <a href="#">Doctorat LMD</a>
+                        <a href="#">Formations dans le système classique</a>
+                        <a href="#">Formations en Post-Graduation</a>
+                        <a href="#">Règlement des études</a>
+                        <a href="#">Textes Réglementaires</a>
+                    </div>
+                    </li>
+                    <li id="dropdown3"><a href="#">Recherche</a>
+                    <div class="dropmenu3">
+                        <a href="#">Politique de la recherche</a>
+                        <a href="#">Carnet du doctorant</a>
+                        <a href="#">Les labos de recherches</a>
+                        <a href="#">Habilitation Universitaire</a>
+                        <a href="#">Partenariats</a>
+                        <a href="#">Les publications</a>
+                        <a href="#">Documents à télécharger</a>
+                    </div>
+                    </li>
+                    <li id="dropdown4"><a href="#">Vie Etudiante</a>
+                    <div class="dropmenu4">
+                        <a href="#">Les Oeuvres Universitaires</a>
+                        <a href="#">Les Activités Scientifiques et Culturelles</a>
+                        <a href="#">Les Organistations Nationales</a>
+                        <a href="#">Les associations culturelles</a>
+                        <a href="#">Les clubs scientifiques</a>
+                    </div>
+                    </li>
+                    <li id="dropdown5"><a href="#">Coopération</a>
+                    <div class="dropmenu5">
+                        <a href="#">Politique</a>
+                            <a href="#">Convention</a>
+                            <a href="#">Projet InPROVE</a>
+                            <a href="#">PROJETS ERASMUS + COFFEE</a>
+                            <a href="#">PROJETS ISTA</a>
+                            <a href="#">PROJETS TEMPUS</a>
+                            <a href="#">PROJETS ERASMUS MUNDUS</a>
+                            <a href="#">PROJET OTAN</a>
+                            <a href="#">PROJET PHC MAGHREB</a>
+                            <a href="#">Algéro - Français (CMEP TASSILI)</a>
+                            <a href="#">Algéro - Français (Projet de Coopération <br/> Scientifique  DPGRF/CNRS)</a>
+                            <a href="#">Algéro - Tunisien</a>
+                            <a href="#">PROJETS INTERUNIVERSITAIRES CIBLES (PIC)</a>
+                            <a href="#">PROJET REGION WALLONIE ULB – UMBB ALGERIE</a>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- news slider -->
+        <div class="content">
+            <div class="images">
+                <img src="./images/bg2.jpg">
+                <img src="./images/bg.jpg">
+                <img src="./images/bg3.jpg">
+                <img src="./images/bg4.jpg">
+                <img src="./images/bg5.jpg">
+                <img src="./images/bg6.jpg">
+                <img src="./images/bg7.jpg">
+                <img src="./images/f.jpg">
+            </div>
+            <div onclick="side_slide(-1)" class="slide left" >
+            </div>
+            <div onclick="side_slide(1)" class="slide right">
+            </div>
+            <div class="btm_sliders">
+                <span onclick="btm_slide(1)"></span>
+                <span onclick="btm_slide(2)"></span>
+                <span onclick="btm_slide(3)"></span>
+                <span onclick="btm_slide(4)"></span>
+                <span onclick="btm_slide(5)"></span>
+                <span onclick="btm_slide(6)"></span>
+                <span onclick="btm_slide(7)"></span>
+                <span onclick="btm_slide(8)"></span>
+            </div>
+        </div>
+    
+<!-- ale-------rt -->
+        <div class="alert" id="alert">
+            <span id="closeAlert">&times;</span>
+            CRSIC a mis en place un système pédagogique en ligne (téléenseignement) et des outils de travail à la maison (télétravail), afin d’assurer la continuité des activités pédagogiques, administratives, réunion de travail, conférence, … <a href="#">En savoir plus ...</a>
+        </div>
+
+
+
+<div class="parent3">
+    <div>
+
+        <article id="whatorder1">
+            <img src="./images/bg2.jpg" alt="">
+        </article>
+
+        <article>
+            <h1>L'établissement:</h1>
+            <p>L'Université M'Hamed BOUGARA de Boumerdès a été créée en 1998 par décret exécutif n° 98-189 du 02 juin 1998.</p>
+        <ul>
+            <li><a href="#">-Faculté des Sciences</a></li>
+            <li><a href="#">-Facultéé de Technologie</a></li>
+            <li><a href="#">-Faculté des Hydrocarbures et de la Chimie</a></li>
+            <li><a href="#">-Faculté des Sciences Economiques,Commerciales et des Sciences de Gestion</a></li>
+            <li><a href="#">-Faculté de Droit</a></li>
+            <li><a href="#">-Institut de Génie Eléctrique et Eléctronique</a></li>
+        </ul>
+        </article>
+    </div>
+    <div>
+        <article id="order2">
+            <img src="./images/bg3.jpg" alt="">
+        </article>
+        <article>
+            <h1>Bibliothéque Universitaire:</h1>
+            <p>Les bibliothèques de l'université sont gérées par un personnel spécialisé réparti en fonction des taches assurées par les différents services.</p>
+            <ul>
+                <li><a href="#">-Production Scientifique de l'UMBB</a></li>
+                <li><a href="#">-Catalogue Collectif de l'UMBB</a></li>
+                <li><a href="#">-SNDL: Système National de Documentation en Ligne</a></li>
+                <li><a href="#">-Portail National de Signalement des Thèses</a></li>
+                <li><a href="#">-Le Portail des Bibliothèques Universitaire Algérienne</a></li>
+                <li><a href="#">-Demander un article et Diffusion Sélective de l'information</a></li>
+            </ul>
+        </article>
+    </div>
+    <div>
+        <article id="whatorder2">
+            <img src="./images/bg4.jpg" alt="">
+        </article>
+        <article>
+            <h1>Recherche Scientifique:</h1>
+            <p>Une recherche pluridisciplinaire répartie dans six Poles de Formation et de Recherche.</p>
+            <ul>
+                <li><a href="#">-Unité de Recherche</a></li>
+                <li><a href="#">-Laboratoires de Recherche</a></li>
+                <li><a href="#">-Habilitation Universitaire</a></li>
+                <li><a href="#">-Partenariats</a></li>
+                <li><a href="#">-Publications</a></li>
+                <li><a href="#">-Doctorat LMD</a></li>
+            </ul>
+        </article>
+    </div>
+    <div>
+        <article id="order3">
+            <img src="./images/bg7.jpg" alt="">
+        </article>
+        <article>
+            <h1>Etudier à l'UMBB:</h1>
+            <p>La formation concerne les domaines: Sciences, Téchnique, Gestion et Droit.</p>
+            <ul>
+                <li><a href="#">-Science</a></li>
+                <li><a href="#">-Science de l'ingénieur</a></li>
+                <li><a href="#">-Hydrocarbures et Chimie</a></li>
+                <li><a href="#">-Génie éléctrique et éléctronique</a></li>
+                <li><a href="#">-Economie et Gestion</a></li>
+                <li><a href="#">-Sciences Humaines</a></li>
+
+            </ul>
+        </article>
+    </div>
+</div>
+
+
+<div class="parent1">
+
+    <div>
+        <h1>Les actualités:</h1><span><a href="#">Plus d'actualités...</a></span>
+    </div>
+
+    <div>
+        <article>
+            <img src="./images/bg3.jpg" alt="">
+            <p>Offre de Bourses de l'Université Malaysia Kelantan</p>
+        </article>
+
+        <article>
+            <img src="./images/bg2.jpg">
+            <p>Appel à projets international AUF COVID-19.2</p>
+        </article>
+
+        <article>
+            <img src="./images/bg4.jpg">
+            <p>Appel à Candidatures Concours international d’entrepreneuriat étudiant :60 secondes pour convaincre</p>
+        </article>
+
+        <article>
+            <img src="./images/bg7.jpg" alt="">
+            <p>Offre de bourses d’études en Indonésie</p>
+        </article>
+
+    </div>
+</div>
+
+
+
+<div class="parent1 parent2">
+    
+    <div>
+        <h1>Les évènements:</h1><span><a href="#">Plus d'évènements...</a></span>
+    </div>
+
+    <div>
+        <article>
+            <img src="./images/bg4.jpg" alt="">
+
+            <section>
+                <strong>les 03 et 04 juillet 2021:</strong>
+                <small>2e Journées Scientifiques et Pédagogiques de la Physique</small>
+                <a href="#">See more...</a>
+            </section>
+        </article>
+
+        <article>
+            <img src="./images/bg6.jpg" alt="">
+            <section>
+                <strong>24 Juin 2021:</strong>
+                <small>Journée d’étude sur Bilan de la formation LMD La place de la compréhension de l’écrit dans les unités fondamentales en enseignement-apprentissage des langues</small>
+                <a href="#">See more...</a>
+            </section>
+        </article>
+
+        <article>
+            <img src="./images/bg7.jpg" alt="">
+            <section>
+                <strong>22 Juin 2021:</strong>
+                <small>Le 1er workshop national sur les réseaux sans fil,le cloud computing et la cryptographie (WWN3C’21).</small>
+                <a href="#">See more...</a>
+            </section>
+        </article>
+
+        <article>
+            <img src="./images/bg5.jpg" alt="">
+            <section>
+                <strong>16 Juin 2021:</strong>
+                <small> يوم دراسي عن بعد حول دور التكوين الجامعي في تطوير مقاولاتية الشباب</small>
+                <a href="#">See more...</a>
+            </section>
+        </article>
+    </div>
+</div>
+
+
+        <div class="parent4">
+            <div>
+                <h3>Bases de Données Retenues 2016:</h3>
+                <ul>
+                    <li><a href="#">-ALUKA The primary source collections from Aluka are being integrated with JSTOR. We invite you to start using the new, easy-to-use JSTOR-branded sites we've ...</a></li>
+                    <li><a href="#">-CAIRN.INFO Revues de sciences humaines et sociales en texte intégral.</a></li>
+                    <li><a href="#">-IEEE de the Institute of Electrical and Electronics Engineers.</a></li>
+                    <li><a href="#">-IOP science Extra de IOP Publishing. (Articles publiés en 2011, 2012, 2013,2014)</a></li>
+                    <li><a href="#">-Springer Materials de Springer Science + Business Media.</a></li>
+                    <li><a href="#">-Springer Protocols de Springer Science + Business Media.</a></li>
+                    <li><a href="#">-Zentrablatt MATH ou ZMATH de Springer Science+Business Media</a></li>
+                    <li><a href="#">-Voir plus ...</a></li>
+                </ul>
+            </div>
+
+            <div style="text-align: center;">
+                <h3>Research Gate:</h3>
+            </div>
+
+
+            <div>
+                <h3>Reseaux Sociaux Académique:</h3>
+                <ul>
+                    <li><a href="#">-Researchgate : La référence des réseaux sociaux pour les chercheurs</a></li>
+                    <li><a href="#">-Academia.edu :</a></li>
+                    <li><a href="#">-Social Sciences Research Network : Les sciences sociales interconnectées.</a></li>
+                    <li><a href="#">-Nature Network : Premier réseau social d’une grande revue scientifique.</a></li>
+                    <li><a href="#">-Mendeley: La nouvelle gestion bibliographique.</a></li>
+                    <li><a href="#">-Google Scholar: Permet d'identifier les travaux de recherche les plus pertinents du monde universitaire.</a></li>
+                    <li><a href="#">-Réseaux Sociaux Académiques et Visibilité</a></li>
+                    <li><a href="#">-La liste Nationale des chercheurs scientifiques ayant un compte Citations Google Scholar.</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="parent5">
+                <div>
+                    <img src="./images/bg.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./images/bg2.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./images/bg3.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./images/bg4.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./images/bg5.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./images/bg6.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./images/bg7.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./images/f.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./images/bg4.jpg" alt="">
+                </div>
+        </div>
+    </main>
+
+
+<footer>
+    <div class="uls">
+
+    
+    <div>
+        <h3>Université:</h3>
+        <ul>
+            <li><a href="#">-Rectorat</li></a>
+            <li><a href="#">-Sécrétariat Général</a></li>
+            <li><a href="#">-Vices Rectorats</a></li>
+            <li><a href="#">-L'Université en chiffres</a></li>
+            <li><a href="#">-Services Communs</a></li>
+            <li><a href="#">-Cellule de Communication</a></li>
+        </ul>
+        <br>
+        <h3>Structures:</h3>
+        <ul>
+            <li><a href="#">-Faculté des Sciences</a></li>
+            <li><a href="#">-Faculté de Téchnologie</a></li>
+            <li><a href="#">-Faculté des Hydrocarbures et de la Chimie</a></li>
+            <li><a href="#">-Institut de Génie Eléctrique et Eléctronique</a></li>
+            <li><a href="#">-Faculté de Droit</a></li>
+            <li><a href="#">-Faculté des Sciences Economique, Commercials et des Sciences de Gestion</a></li>
+            <li><a href="#">-Centres des Réseaux et Système d'information</a></li>
+        </ul>
+    </div>
+    <div>
+        <h3>Liens Utiles:</h3>
+        <ul>
+            <li><a href="#">-Ministère href-Ministère de l'Enseignement Supérieur et de la Recherche Scientifique (MESRS)</a></li>
+            <li><a href="#">-Direction Générale de la Recherche Scientifique et du Développement Technologique (DG-RSDT)</a></li>
+            <li><a href="#">-Textes Reglementaires (TR)</a></li>
+            <li><a href="#">-Centre de Recherche en Biotechnologie</a></li>
+            <li><a href="#">-CERIST</a></li>
+            <li><a href="#">-portail de revues en sciences humaines et sociales</a></li>
+            <li><a href="#">-Campus numérique Francophone d’Alger</a></li>
+            <li><a href="#">-Conférence Régionale des Universités de Centre CRUC</a></li>
+            <li><a href="#">-Conférence Régionale des Universités de l'Ouest CRUO</a></li>
+            <li><a href="#">-Conférence Régionale des Universités de l'Est CRUE</a></li>
+            <li><a href="#">-Agence Nationale de l'emploi</a></li>
+            <li><a href="#">-National Erasmus + Office Algérie</a></li>
+            <li><a href="#">-Agence Thématique de Recherche en Sciences Sociales et Humaines (ATRSSH)</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="contact">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+<div class="made">
+    Made By Meissoune
+</div>
+</footer>
+
+
+    <script src="script.js">
+</script>
 </body>
 </html>
