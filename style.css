@@ -328,29 +328,6 @@ main .menunav .navItem ul li a{
 
 }
 
-.content .slide{
-    width: 30px;
-    height: 30px;
-    border:2px solid #000;
-    border-left: none;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    background-color: rgba(255, 255, 255,0.1);
-    border-radius:50% ;
-}
-
-.content .slide:hover{
-    background-color: #000;
-}
-
-.content .right{
-    right: 0;
-    border:2px solid #000;
-    border-right: none;
-}
-
 /*-----------------------------------------------------------------------------------------*/
 main .alert{
     width: 70%;
@@ -886,7 +863,7 @@ I will create a new design that it will be responsive with the smart phones  */
     }
     section .hello{
         height: 55vh;
-        font-size: 15px;
+        font-size: 25px;
     }
     section .subscribe{
         width: 315px;
@@ -901,19 +878,24 @@ I will create a new design that it will be responsive with the smart phones  */
         height: 55vh;
     }
     .content{
-        height: 390px;
-        width: 390px;
-        margin-top: 50px;
+        height: 350px;
+        width: 350px;
+        margin-top:0px;
+    }
+    main .parent3{
+        margin-top:20px;
+        padding-top: 10px;
     }
     main .parent3 div article:first-child{
-        width: 80%;
+        width: 90%;
         margin: auto;
         height: 30vh;
     }
     main .parent3 div article:last-child{
-        width: 80%;
+        width: 90%;
         height: auto;
-        font-size: 10px;
+        font-size: 18px;
+        margin-bottom: 20px;
     }
     main .parent1 div:last-child article{
         width: 300px;
@@ -922,7 +904,7 @@ I will create a new design that it will be responsive with the smart phones  */
         width: 300px;
     }
     main .parent1 div:first-child h1 {
-        font-size: 20px;
+        font-size: 23px;
     }
     main .parent5 div{
         width: 280px;
