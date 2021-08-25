@@ -880,11 +880,11 @@ I will create a new design that it will be responsive with the smart phones  */
     .content{
         height: 350px;
         width: 350px;
-        margin-top:0px;
     }
     main .parent3{
         margin-top:20px;
-        padding-top: 10px;
+        padding-top: 5px;
+        margin-bottom: 20px;
     }
     main .parent3 div article:first-child{
         width: 90%;
@@ -897,6 +897,11 @@ I will create a new design that it will be responsive with the smart phones  */
         font-size: 18px;
         margin-bottom: 20px;
     }
+    main .parent3 div article:last-child h1{
+        font-size: 20px;
+    }
+    
+
     main .parent1 div:last-child article{
         width: 300px;
     }
@@ -904,10 +909,14 @@ I will create a new design that it will be responsive with the smart phones  */
         width: 300px;
     }
     main .parent1 div:first-child h1 {
-        font-size: 23px;
+        font-size: 20px;
     }
     main .parent5 div{
         width: 280px;
         height: 280px;
+    }
+    main .alert{
+        width: 85%;
+        margin: 10px auto;
     }
 }
